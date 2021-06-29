@@ -19,11 +19,16 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 
 //*slide*//
-document.querySelector("#items")
-.addEventListener("wheel", Event => {
-   if(Event.deltaY > 0) {
-   Event.target.scrollBy(300, 0)
-  } else {
-    Event.target.scrollBy(-300, 0)
-  }
-})
+
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => elemento.innerHTML += letra, 75 * i);
+  });
+}
+
+
+const titulo = document.querySelector('h2');
+typeWriter(titulo);
+
