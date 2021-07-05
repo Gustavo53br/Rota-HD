@@ -1,3 +1,4 @@
+
 body,
 ul {
   margin: 0;
@@ -149,7 +150,6 @@ h1 {
   margin-top: 30px;
   background: #000000;
   color:rgb(252, 111, 17);
-  padding: 17px;
   font-weight: bold;
 }
 
@@ -186,7 +186,7 @@ h1 {
   
 }
 /*vestuario*/
-.vestuario {
+#vestuario {
   margin-top: 180px;
   margin-bottom: 100px;
   
@@ -207,6 +207,7 @@ h1 {
    flex-wrap: wrap;
    max-width: 1199px;
    margin: 0 auto;
+  
  }
 
  .roupas > div {
@@ -214,7 +215,20 @@ h1 {
   margin: 50px;
   margin-top: 90px;
 }
+
+.aces {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1199px;
+  margin: 0 auto;
  
+}
+
+.aces > div {
+ flex: 1 1 200px;
+ margin: 50px;
+ margin-top: 90px;
+}
 .mascimg {
 margin-top: 180px;
 }
